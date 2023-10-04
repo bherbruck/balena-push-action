@@ -1,0 +1,12 @@
+name: Balena Push
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  balena-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install balena-cli
+        run: bash ./install-balena-cli.sh

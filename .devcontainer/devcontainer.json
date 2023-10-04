@@ -1,0 +1,17 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/dhoeric/features/act:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2":  {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.copilot",
+				"github.vscode-github-actions",
+				"foxundermoon.shell-format"
+			]
+		}
+	}
+}
