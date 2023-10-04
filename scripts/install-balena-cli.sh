@@ -20,8 +20,10 @@ fi
 # Get the corresponding filename pattern
 ARCH_PATTERN="${ARCH_MAPPING[$ARCH]}"
 
+echo "ARCH_PATTERN: $ARCH_PATTERN"
+
 # Define the GitHub release URL
-GITHUB_RELEASE_URL="https://api.github.com/repos/balena-io/balena-cli/releases/123044991"
+GITHUB_RELEASE_URL="https://api.github.com/repos/balena-io/balena-cli/releases/latest"
 
 # Parse the JSON response to get the download URL for the specific architecture
 DOWNLOAD_URL=$(curl -s $GITHUB_RELEASE_URL | jq -r ".assets[] | select(.name | contains(\"balena-cli-v17.1.4-linux-$ARCH_PATTERN-standalone.zip\")) | .browser_download_url")
