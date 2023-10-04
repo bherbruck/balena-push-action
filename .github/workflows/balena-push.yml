@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install balena-cli
-        run: bash ./install-balena-cli.sh
+        run: bash ./scripts/install-balena-cli.sh
 
       - name: Log in to balena
         run: balena login --token ${{ secrets.BALENA_API_KEY }}
