@@ -1,0 +1,17 @@
+name: Balena Push
+description: Push to Balena
+
+inputs:
+  balena-api-key:
+    description: 'Balena API Key'
+    required: true
+  balena-app-name:
+    description: 'Balena Application Name'
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.balena-api-key }}
+    - ${{ inputs.balena-app-name }}
