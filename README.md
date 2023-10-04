@@ -1,6 +1,6 @@
 # Balena push docker action
 
-This action pushes a docker image to balena registry.
+A github action to push a docker image to balena.
 
 ## Inputs
 
