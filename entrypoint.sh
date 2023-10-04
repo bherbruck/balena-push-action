@@ -3,8 +3,14 @@
 echo using token $1
 echo using app $2
 
+BALENA_DIR=$HOME/balena-cli
+
+echo "Installing balena-cli"
+curl https://raw.githubusercontent.com/bherbruck/install-balena-cli/main/install-balena-cli |
+  bash -s $BALENA_DIR
+
 echo "Logging into balena"
-~/balena-cli/balena login --token $1
+$BALENA_DIR/balena login --token $1
 
 echo "Pushing to balena"
-~/balena-cli/balena push $2
+$BALENA_DIR/balena-cli/balena push $2
