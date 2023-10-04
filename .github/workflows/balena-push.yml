@@ -18,7 +18,7 @@ jobs:
         run: bash ./scripts/install-balena-cli.sh
 
       - name: Log in to balena
-        run: balena login --token ${{ secrets.BALENA_API_KEY }}
+        run: ~/balena-cli/balena login --token ${{ secrets.BALENA_API_KEY }}
 
       - name: Push code to balena
-        run: balena push ${{ vars.BALENA_APP_NAME }}
+        run: ~/balena-cli/balena push ${{ vars.BALENA_APP_NAME }}
