@@ -13,4 +13,4 @@ echo "Logging into balena"
 $BALENA_DIR/balena login --token $1
 
 echo "Pushing to balena"
-$BALENA_DIR/balena-cli/balena push $2
+$BALENA_DIR/balena push $2
