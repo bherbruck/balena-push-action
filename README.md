@@ -6,6 +6,12 @@ A github action to push a docker image to balena.
 
 ### `balena-api-key`
 
+**Required** The balena api key to use for authentication.
+
+### `balena-app-name`
+
+**Required** The balena app name to push to.
+
 ## Example usage
 
 ```yaml
