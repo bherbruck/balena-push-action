@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Balena Push
-        uses: bherbruck/balena-push@v0.2
+        uses: bherbruck/balena-push-action@v0.2
         with:
           balena-api-token: ${{ secrets.BALENA_API_KEY }}
           balena-app-name: ${{ vars.BALENA_APP_NAME }}
