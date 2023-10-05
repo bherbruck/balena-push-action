@@ -31,7 +31,7 @@ jobs:
       - name: Balena Push
         uses: bherbruck/balena-push-action@v0.2
         with:
-          balena-api-token: ${{ secrets.BALENA_API_KEY }}
+          balena-api-key: ${{ secrets.BALENA_API_KEY }}
           balena-app-name: ${{ vars.BALENA_APP_NAME }}
 
 
